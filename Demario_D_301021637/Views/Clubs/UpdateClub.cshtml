@@ -1,0 +1,32 @@
+﻿@model Clubs
+
+@{
+    Layout = "_DefaultLayout";
+    ViewBag.Title = "UpdateClub";
+}
+
+
+<title>Update Club - Dream League Soccer</title>
+
+
+<h2 class="cover-heading">UPDATE CLUB</h2>
+
+<form asp-action="UpdateClub" method="post">
+    <input type="hidden" asp-for="ClubID" />
+    <div class="form-group">
+        <label for="ClubName">Club Name</label>
+        <input asp-for="ClubName" type="text" class="form-control" id="ClubName" required>
+    </div>
+    <div class="form-group">
+        <label for="ClubManager">Club Manager</label>
+        <input asp-for="ClubManager" type="text" class="form-control" id="ClubManager" required>
+    </div>
+    <div class="form-group">
+        <label for="TxtName">Club Details</label>
+        <textarea asp-for="ClubDetails" class="form-control" id="ClubDetails" required></textarea>
+    </div>
+    <button class="btn btn-lg btn-secondary" type="submit">SAVE</button>
+    <a asp-controller="Home" asp-action="Index" class="btn btn-lg btn-secondary">CANCEL</a>
+</form>
+        
+

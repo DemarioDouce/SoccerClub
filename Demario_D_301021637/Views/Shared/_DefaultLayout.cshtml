@@ -1,0 +1,53 @@
+﻿@inject SignInManager<IdentityUser> SignInManager
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS-->
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+    <!-- Custom CSS-->
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+</head>
+<body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="masthead mb-auto">
+            <div class="inner">
+                <h3 class="masthead-brand">DREAM LEAGUE SOCCER</h3>
+                <nav class="nav nav-masthead justify-content-center">
+                    <a class="nav-link" asp-controller="Home" asp-action="Index">HOME</a>
+                    <a class="nav-link" asp-controller="Clubs" asp-action="Clubs">CLUBS</a>
+                    <a class="nav-link" asp-controller="Clubs" asp-action="AddClub">ADD CLUB</a>
+                    <a class="nav-link" asp-controller="Players" asp-action="ManagePlayers">MANAGE PLAYERS</a>
+                    @if (SignInManager.IsSignedIn(User))
+                    {
+
+                <a class="nav-link" style="color:#dc3545" asp-controller="Account" asp-action="Logout">LOGOUT @User.Identity.Name.ToUpper()</a>
+
+                    }
+                </nav>
+            </div>
+        </header>
+
+        <main role="main" class="inner cover">
+            @RenderBody()
+        </main>
+
+        <footer class="mastfoot mt-auto">
+            <div class="inner">
+                <p>© 2020 Demario Douce. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,32 @@
+﻿@model Players
+
+@{
+    Layout = "_DefaultLayout";
+    ViewBag.Title = "AddPlayers";
+}
+
+
+<title>Add Players - Dream League Soccer</title>
+
+
+<h2 class="cover-heading">ADD PLAYERS</h2>
+
+<form asp-action="AddPlayers" method="post">
+    <input type="hidden" asp-for="PlayerID" />
+    <div class="form-group">
+        <label for="ClubName">Player Name</label>
+        <input asp-for="PlayerName" type="text" class="form-control" id="PlayerName" required>
+    </div>
+    <div class="form-group">
+        <label for="ClubManager">Player Club</label>
+        <input asp-for="PlayerClub" type="text" class="form-control" id="PlayerClub" required>
+    </div>
+    <div class="form-group">
+        <label for="TxtName">Player Position</label>
+        <input asp-for="PlayerPosition" class="form-control" id="PlayerPosition" required>
+    </div>
+    <button class="btn btn-lg btn-secondary" type="submit">SAVE</button>
+    <a asp-controller="Home" asp-action="Index" class="btn btn-lg btn-secondary">CANCEL</a>
+</form>
+        
+
