@@ -15,5 +15,10 @@ namespace Demario_D_301021637.Controllers
             return View();
         }
 
+        public ViewResult Features()
+        {
+            return View();
+        }
+
     }
 }
