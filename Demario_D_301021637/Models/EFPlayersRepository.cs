@@ -35,5 +35,17 @@ namespace Demario_D_301021637.Models
             }
             context.SaveChanges();
         }
+
+        public Players DeletePlayer(int PlayerId)
+        {
+            Players dbEntry = context.PlayersDb
+                .FirstOrDefault(p => p.PlayerID == PlayerId);
+            if (dbEntry != null)
+            {
+                context.PlayersDb.Remove(dbEntry);
+                context.SaveChanges();
+            }
+            return dbEntry;
+        }
     }
 }

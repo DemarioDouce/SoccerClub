@@ -1,0 +1,27 @@
+﻿@model Players
+@{
+    Layout = "_DefaultLayout";
+    ViewBag.Title = "ReassignPlayer";
+}
+
+    <title>Reassign Player - Dream League Soccer</title>
+
+
+    <h2 class="cover-heading">REASSIGN PLAYER</h2>
+
+<form asp-action="ReassignPlayer" method="post">
+    <input type="hidden" asp-for="PlayerID" />
+    <div class="form-group">
+        <input asp-for="PlayerName" type="hidden" class="form-control" id="PlayerName">
+    </div>
+    <div class="form-group">
+        <label for="PlayerClub">Player Club</label>
+        <input asp-for="PlayerClub" type="text" class="form-control" id="PlayerClub" required>
+    </div>
+    <div class="form-group">
+        <input asp-for="PlayerPosition" type="hidden" class="form-control" id="PlayerPosition">
+    </div>
+    <button class="btn btn-lg btn-secondary" type="submit">SAVE</button>
+    <a asp-controller="Home" asp-action="Index" class="btn btn-lg btn-secondary">CANCEL</a>
+</form>
+

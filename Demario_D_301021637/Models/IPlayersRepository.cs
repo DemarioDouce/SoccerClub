@@ -10,6 +10,7 @@ namespace Demario_D_301021637.Models
         IQueryable<Players> IPlayers { get; }
 
         void SavePlayers(Players player);
+        Players DeletePlayer(int PlayerId);
 
     }
 }

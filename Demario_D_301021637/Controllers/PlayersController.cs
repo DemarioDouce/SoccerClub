@@ -35,5 +35,26 @@ namespace Demario_D_301021637.Controllers
             return RedirectToAction("ManagePlayers");
         }
 
+        [Authorize]
+        public ViewResult ReassignPlayer(int PlayerId) =>
+        View(PlayersRepository.IPlayers
+        .FirstOrDefault(p => p.PlayerID == PlayerId));
+
+        [HttpPost]
+        [Authorize]
+        public IActionResult ReassignPlayer(Players player)
+        {
+            PlayersRepository.SavePlayers(player);
+            return RedirectToAction("ManagePlayers");
+        }
+
+        [HttpPost]
+        [Authorize]
+        public IActionResult DeletePlayer(int PlayerId)
+        {
+            Players deletePlayer = PlayersRepository.DeletePlayer(PlayerId);
+            return RedirectToAction("ManagePlayers");
+        }
+
     }
 }

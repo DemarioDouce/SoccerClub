@@ -15,6 +15,7 @@
             <th scope="col">Player Name</th>
             <th scope="col">Player Club</th>
             <th scope="col">Player Position</th>
+            <th scope="col" colspan="2">Actions</th>
         </tr>
     </thead>
     <tbody>
@@ -24,29 +25,29 @@
             <td>@p.PlayerName</td>
             <td>@p.PlayerClub</td>
             <td>@p.PlayerPosition</td>
+            <td>
+                <form>
+                    <a asp-controller="Players" asp-action="ReassignPlayer" class="btn btn-sm btn-warning"
+                       asp-route-PlayerId="@p.PlayerID">
+                        REASSIGN
+                    </a>
+                    <input type="hidden" name="PlayerId" value="@p.PlayerID" />
+                </form>
+            </td>
+            <td>
+                <form asp-controller="Players" asp-action="DeletePlayer" method="post">
+                    <input type="hidden" name="PlayerId" value="@p.PlayerID" />
+                    <button type="submit" class="btn btn-danger btn-sm">
+                        DEREGISTER
+                    </button>
+                </form>
+            </td>
         </tr>
         }
     </tbody>
 </table>
 
-<div class="container">
-    <div class="row">
-        <div class="col-sm">
-            <p class="lead">
-                <a class="btn btn-primary" asp-controller="Players" asp-action="AddPlayers">
-                    ADD
-                </a>
-            </p>
-        </div>
-        <div class="col-sm">
-            <p class="lead">
-                <a href="#" class="btn btn-lg btn-secondary">REASSIGN</a>
-            </p>
-        </div>
-        <div class="col-sm">
-            <p class="lead">
-                <a href="#" class="btn btn-lg btn-secondary">DEREGISTER</a>
-            </p>
-        </div>
-    </div>
-</div>
+
+
+<a class="btn btn-primary" asp-controller="Players" asp-action="AddPlayers">ADD</a>
+          
