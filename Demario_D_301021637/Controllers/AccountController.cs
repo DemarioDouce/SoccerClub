@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Demario_D_301021637.Models;
 using Demario_D_301021637.Models.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -14,11 +15,13 @@ namespace Demario_D_301021637.Controllers
         private UserManager<IdentityUser> userManager;
         private SignInManager<IdentityUser> signInManager;
         public AccountController(UserManager<IdentityUser> userMgr,
-        SignInManager<IdentityUser> signInMgr)
+                       SignInManager<IdentityUser> signInMgr)
         {
             userManager = userMgr;
             signInManager = signInMgr;
+            IdentitySeedData.EnsurePopulated(userMgr).Wait();
         }
+
         [AllowAnonymous]
         public ViewResult Login(string returnUrl)
         {

@@ -52,7 +52,6 @@ namespace Demario_D_301021637
             });
             SeedDataClubs.EnsurePopulated(app);
             SeedDataPlayers.EnsurePopulated(app);
-            IdentitySeedData.EnsurePopulated(app);
         }
     }
 }

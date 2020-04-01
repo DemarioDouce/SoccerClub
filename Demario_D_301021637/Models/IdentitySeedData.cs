@@ -10,20 +10,18 @@ namespace Demario_D_301021637.Models
 {
     public class IdentitySeedData
     {
-        private const string AdminUser = "Admin";
-        private const string AdminPassword = "Secret123$";
+        private const string adminUser = "Admin";
+        private const string adminPassword = "Secret123$";
 
-        public static async void EnsurePopulated(IApplicationBuilder app)
+        public static async Task EnsurePopulated(UserManager<IdentityUser> userManager)
         {
-            UserManager<IdentityUser> userManager = app.ApplicationServices
-            .GetRequiredService<UserManager<IdentityUser>>();
-            IdentityUser UserAdmin = await userManager.FindByIdAsync(AdminUser);
-            if (UserAdmin == null)
-            {
-                UserAdmin = new IdentityUser("Admin");
-                await userManager.CreateAsync(UserAdmin, AdminPassword);
-            }
 
+            IdentityUser user = await userManager.FindByIdAsync(adminUser);
+            if (user == null)
+            {
+                user = new IdentityUser("Admin");
+                await userManager.CreateAsync(user, adminPassword);
+            }
         }
     }
 }
