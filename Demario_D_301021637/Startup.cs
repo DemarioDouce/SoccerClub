@@ -52,6 +52,12 @@ namespace Demario_D_301021637
             });
             SeedDataClubs.EnsurePopulated(app);
             SeedDataPlayers.EnsurePopulated(app);
+
+            using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
+            {
+                var context = serviceScope.ServiceProvider.GetRequiredService<AppIdentityDbContext>();
+                context.Database.Migrate();
+            }
         }
     }
 }
