@@ -56,6 +56,7 @@ namespace Demario_D_301021637
             using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
             {
                 var context = serviceScope.ServiceProvider.GetRequiredService<AppIdentityDbContext>();
+                context.Database.EnsureDeleted();
                 context.Database.Migrate();
             }
         }
