@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using Demario_D_301021637.Infrastructure;
 
 namespace Demario_D_301021637
 {
@@ -32,6 +33,7 @@ namespace Demario_D_301021637
             services.AddTransient<IClubsRepository, EFClubsRepository>();
             services.AddTransient<IPlayersRepository, EFPlayersRepository>();
 
+            services.AddSingleton<UptimeService>();
             services.AddMvc();
 
         }

@@ -1,4 +1,5 @@
-﻿@{
+﻿@model Dictionary<string, string>
+@{
     Layout = "_DefaultLayout";
     ViewBag.Title = "Index";
 }
@@ -12,4 +13,8 @@
     <a asp-controller="Clubs" asp-action="AddClub" class="btn btn-lg btn-secondary">ADD CLUB</a>
     <a asp-controller="Home" asp-action="Features" class="btn btn-lg btn-secondary">FEATURES</a>
 </p>
+@foreach (var kvp in Model)
+{
+<p>Uptime: @kvp.Value</p>
+}
 
