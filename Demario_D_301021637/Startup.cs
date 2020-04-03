@@ -45,7 +45,7 @@ namespace Demario_D_301021637
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseMiddleware<ContentMiddleware>();
             app.UseDeveloperExceptionPage();
             app.UseBrowserLink();
             app.UseStaticFiles();
