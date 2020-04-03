@@ -15,11 +15,10 @@ namespace Demario_D_301021637.Controllers
         private UserManager<IdentityUser> userManager;
         private SignInManager<IdentityUser> signInManager;
         public AccountController(UserManager<IdentityUser> userMgr,
-                       SignInManager<IdentityUser> signInMgr)
+        SignInManager<IdentityUser> signInMgr)
         {
             userManager = userMgr;
             signInManager = signInMgr;
-            IdentitySeedData.EnsurePopulated(userMgr).Wait();
         }
 
         [AllowAnonymous]

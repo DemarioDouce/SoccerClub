@@ -33,6 +33,7 @@ namespace Demario_D_301021637
             services.AddTransient<IPlayersRepository, EFPlayersRepository>();
 
             services.AddMvc();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -52,13 +53,8 @@ namespace Demario_D_301021637
             });
             SeedDataClubs.EnsurePopulated(app);
             SeedDataPlayers.EnsurePopulated(app);
+            IdentitySeedData.EnsurePopulated(app);
 
-            using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
-            {
-                var context = serviceScope.ServiceProvider.GetRequiredService<AppIdentityDbContext>();
-                context.Database.EnsureDeleted();
-                context.Database.Migrate();
-            }
         }
     }
 }
