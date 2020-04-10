@@ -9,6 +9,12 @@
 
 <h2 class="cover-heading">ADD CLUB</h2>
 
-@Html.Partial("FormBasedPartialView")
-        
+<form asp-action="AddClub" method="post">
+
+    @Html.Partial("FormBasedPartialView")
+    <button class="btn btn-lg btn-secondary" type="submit">SAVE</button>
+    <a asp-controller="Home" asp-action="Index" class="btn btn-lg btn-secondary">CANCEL</a>
+
+</form>
+
 
