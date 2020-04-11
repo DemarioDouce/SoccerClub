@@ -1,4 +1,5 @@
-﻿@{
+﻿@model Clubs
+@{
     Layout = "_DefaultLayout";
     ViewBag.Title = "AddClub";
 }
@@ -10,7 +11,7 @@
 <h2 class="cover-heading">ADD CLUB</h2>
 
 <form asp-action="AddClub" method="post">
-
+    <input type="hidden" asp-for="createdBy" value="@User.Identity.Name" />
     @Html.Partial("FormBasedPartialView")
     <button class="btn btn-lg btn-secondary" type="submit">SAVE</button>
     <a asp-controller="Home" asp-action="Index" class="btn btn-lg btn-secondary">CANCEL</a>

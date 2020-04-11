@@ -15,6 +15,8 @@ namespace Demario_D_301021637.Models
         public string ClubManager { get; set; }
         public string ClubDetails { get; set; }
 
+        public string createdBy { get; set; }
+
     }
 
 }

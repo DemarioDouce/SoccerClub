@@ -10,7 +10,7 @@
 
 
 <h2 class="cover-heading">UPDATE CLUB</h2>
-
+<div class="text-danger" asp-validation-summary="All"></div>
 <form asp-action="UpdateClub" method="post">
     <input type="hidden" asp-for="ClubID" />
     <div class="form-group">
@@ -25,6 +25,7 @@
         <label for="TxtName">Club Details</label>
         <textarea asp-for="ClubDetails" class="form-control" id="ClubDetails" required></textarea>
     </div>
+    <input type="hidden" asp-for="createdBy" id="createdBy" />
     <button class="btn btn-lg btn-secondary" type="submit">SAVE</button>
     <a asp-controller="Home" asp-action="Index" class="btn btn-lg btn-secondary">CANCEL</a>
 </form>

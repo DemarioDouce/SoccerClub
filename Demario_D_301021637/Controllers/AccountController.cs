@@ -57,5 +57,41 @@ namespace Demario_D_301021637.Controllers
             await signInManager.SignOutAsync();
             return Redirect(returnUrl);
         }
-    }
+
+        [HttpPost]
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> SignUp(SignupModel user)
+        {
+
+            IdentityUser appUser = new IdentityUser
+            {
+                UserName = user.Name,
+                Email = user.Email
+            };
+
+            var result = await userManager.CreateAsync(appUser, user.Password);
+
+            if (result.Succeeded)
+            {
+                await signInManager.SignInAsync(appUser, isPersistent: false);
+                return Redirect(user?.ReturnUrl ?? "/Home/Index");
+            }
+            else
+            {
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError("", error.Description);
+                }
+                return View(user);
+            }
+        }
+
+
+            public ViewResult SignUp()
+            {
+                return View();
+            }
+
+        }
 }

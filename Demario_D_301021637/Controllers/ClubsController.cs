@@ -51,23 +51,53 @@ namespace Demario_D_301021637.Controllers
 
         [Authorize]
         public ViewResult UpdateClub(int ClubId) =>
-    View(ClubsRepository.IClubs
+        View(ClubsRepository.IClubs
         .FirstOrDefault(c => c.ClubID == ClubId));
 
         [HttpPost]
         [Authorize]
         public IActionResult UpdateClub(Clubs club)
         {
-            ClubsRepository.SaveClubs(club);
-                return RedirectToAction("Clubs");
+            if (ModelState.IsValid) {
+                if (IsValidUser(club.createdBy))
+                {
+                    ClubsRepository.SaveClubs(club);
+                    return RedirectToAction("Clubs");
+                }
+                else
+                {
+                    ModelState.AddModelError("createdBy", "You don't have right to Update "+ GetClubs.ClubName + " club");
+                }
+
+            } 
+            return View(club);
         }
 
         [HttpPost]
         [Authorize]
         public IActionResult DeleteClub(int ClubId)
         {
-            Clubs deletedClub = ClubsRepository.DeleteClub(ClubId);
-            return RedirectToAction("Clubs");
+            GetClubs = ClubsRepository.IClubs.FirstOrDefault(c => c.ClubID == ClubId);
+            if (IsValidUser(GetClubs.createdBy))
+            {
+                Clubs deletedClub = ClubsRepository.DeleteClub(ClubId);
+                return View ("Clubs");
+            }
+            else
+            {
+                ViewBag.ErrorMessage = "You don't have right to Delete "+ GetClubs.ClubName + " club";
+                return View("Clubs", ClubsRepository.IClubs);
+            }
+
+        }
+
+        private Boolean IsValidUser(String CreatedBy)
+        {
+            if (CreatedBy.Equals(@User.Identity.Name))
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

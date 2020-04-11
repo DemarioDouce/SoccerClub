@@ -5,27 +5,29 @@
     ViewBag.Title = "Clubs";
 }
 
-    <title>Clubs - Dream League Soccer</title>
+<title>Clubs - Dream League Soccer</title>
 
 
-    <h2 class="cover-heading">CLUBS</h2>
+<h2 class="cover-heading">CLUBS</h2>
+<p>@ViewBag.ErrorMessage</p>
 
-    <table class="table table-dark" border="1">
-        <thead>
-            <tr>
-                <th scope="col">Club Name</th>
-                <th scope="col">More Details</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (Clubs c in Model)
-            {
+<div class="text-danger" asp-validation-summary="All"></div>
+<table class="table table-dark" border="1">
+    <thead>
+        <tr>
+            <th scope="col">Club Name</th>
+            <th scope="col">More Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Clubs c in Model)
+        {
             <tr>
                 <td>@c.ClubName</td>
                 <td>
-                <a asp-controller="Clubs" asp-action="ClubDetails" asp-route-ClubId="@c.ClubID">View</a>
+                    <a asp-controller="Clubs" asp-action="ClubDetails" asp-route-ClubId="@c.ClubID">View</a>
                 </td>
             </tr>
-            }
-        </tbody>
-    </table>
+        }
+    </tbody>
+</table>

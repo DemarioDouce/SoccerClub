@@ -14,6 +14,7 @@ namespace Demario_D_301021637.Models
         {
             ApplicationDbContext context = app.ApplicationServices
                 .GetRequiredService<ApplicationDbContext>();
+            context.Database.EnsureDeleted();
             context.Database.Migrate();
             if (!context.ClubsDb.Any())
             {
@@ -23,20 +24,23 @@ namespace Demario_D_301021637.Models
                         ClubName = "Manchester United",
                         ClubManager = "Ole Gunnar Solskjær",
                         ClubDetails = "Manchester United Football Club is a professional football club based in Old Trafford, Greater Manchester, England, that competes in the Premier League, the top flight of English football.",
+                        createdBy = "Amrit"
                     },
                     new Clubs
                     {
                         ClubName = "Manchester City",
                         ClubManager = "Pep Guardiola",
                         ClubDetails = "Manchester City Football Club is an English football club based in Manchester that competes in the Premier League, the top flight of English football. Founded in 1880 as St. Mark's, it became Ardwick Association Football Club in 1887 and Manchester City in 1894.",
+                        createdBy = "Admin"
                     },
                     new Clubs
                     {
                         ClubName = "Liverpool",
                         ClubManager = "Jürgen Klopp",
                         ClubDetails = "Liverpool Football Club is a professional football club in Liverpool, England, that competes in the Premier League, the top tier of English football.",
+                        createdBy = "Admin"
                     }
-                );
+                ) ; 
                 context.SaveChanges();
             }
         }

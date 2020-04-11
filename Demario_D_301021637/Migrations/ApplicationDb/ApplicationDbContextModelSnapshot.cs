@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace Demario_D_301021637.Migrations
+namespace Demario_D_301021637.Migrations.ApplicationDb
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot
@@ -29,6 +29,8 @@ namespace Demario_D_301021637.Migrations
                     b.Property<string>("ClubManager");
 
                     b.Property<string>("ClubName");
+
+                    b.Property<string>("createdBy");
 
                     b.HasKey("ClubID");
 

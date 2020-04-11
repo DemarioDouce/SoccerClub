@@ -4,16 +4,14 @@ using Demario_D_301021637.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace Demario_D_301021637.Migrations.AppIdentityDb
+namespace Demario_D_301021637.Migrations
 {
     [DbContext(typeof(AppIdentityDbContext))]
-    [Migration("20200326194210_Initial")]
-    partial class Initial
+    partial class AppIdentityDbContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

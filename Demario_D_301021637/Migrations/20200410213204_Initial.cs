@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Demario_D_301021637.Migrations.AppIdentityDb
+namespace Demario_D_301021637.Migrations
 {
     public partial class Initial : Migration
     {

@@ -6,10 +6,10 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace Demario_D_301021637.Migrations
+namespace Demario_D_301021637.Migrations.ApplicationDb
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20200310191947_Initial")]
+    [Migration("20200410213252_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -32,9 +32,28 @@ namespace Demario_D_301021637.Migrations
 
                     b.Property<string>("ClubName");
 
+                    b.Property<string>("createdBy");
+
                     b.HasKey("ClubID");
 
                     b.ToTable("ClubsDb");
+                });
+
+            modelBuilder.Entity("Demario_D_301021637.Models.Players", b =>
+                {
+                    b.Property<int>("PlayerID")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("PlayerClub");
+
+                    b.Property<string>("PlayerName");
+
+                    b.Property<string>("PlayerPosition");
+
+                    b.HasKey("PlayerID");
+
+                    b.ToTable("PlayersDb");
                 });
 #pragma warning restore 612, 618
         }
