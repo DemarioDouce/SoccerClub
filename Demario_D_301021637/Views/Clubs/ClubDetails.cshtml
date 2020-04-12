@@ -19,10 +19,8 @@
             <th scope="col">Club Details</th>
             @if (SignInManager.IsSignedIn(User))
             {
-                @if (User.Identity.Name == "Admin")
-                {
                     <th scope="col" colspan="2">Actions</th>
-                }
+            
             }
                 </tr>
     </thead>
@@ -34,9 +32,6 @@
 
             @if (SignInManager.IsSignedIn(User))
             {
-                @if (User.Identity.Name == "Admin")
-                {
-
                     <td>
                         <form>
                             <a asp-controller="Clubs" asp-action="UpdateClub" class="btn btn-sm btn-warning"
@@ -54,7 +49,6 @@
                             </button>
                         </form>
                     </td>
-                }
             }
                 </tr>
     </tbody>
