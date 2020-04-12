@@ -165,7 +165,6 @@ C:\Users\demar\Desktop\New folder\Demario_D_301021637\bin\Debug\netcoreapp2.1\De
 C:\Users\demar\Desktop\New folder\Demario_D_301021637\bin\Debug\netcoreapp2.1\Demario_D_301021637.pdb
 C:\Users\demar\Desktop\New folder\Demario_D_301021637\bin\Debug\netcoreapp2.1\Demario_D_301021637.Views.dll
 C:\Users\demar\Desktop\New folder\Demario_D_301021637\bin\Debug\netcoreapp2.1\Demario_D_301021637.Views.pdb
-C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Demario_D_301021637.csprojAssemblyReference.cache
 C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Demario_D_301021637.csproj.CoreCompileInputs.cache
 C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Demario_D_301021637.RazorAssemblyInfo.cache
 C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Demario_D_301021637.RazorAssemblyInfo.cs

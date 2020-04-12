@@ -24,7 +24,7 @@ namespace Demario_D_301021637.Models
                         ClubName = "Manchester United",
                         ClubManager = "Ole Gunnar Solskjær",
                         ClubDetails = "Manchester United Football Club is a professional football club based in Old Trafford, Greater Manchester, England, that competes in the Premier League, the top flight of English football.",
-                        createdBy = "Amrit"
+                        createdBy = "Admin"
                     },
                     new Clubs
                     {
