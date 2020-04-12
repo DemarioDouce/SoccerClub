@@ -26,9 +26,11 @@
                     <a class="nav-link" asp-controller="Players" asp-action="ManagePlayers">MANAGE PLAYERS</a>
                     @if (SignInManager.IsSignedIn(User))
                     {
-
-                <a class="nav-link" style="color:#dc3545" asp-controller="Account" asp-action="Logout">LOGOUT @User.Identity.Name.ToUpper()</a>
-
+                        <a class="nav-link" style="color:#dc3545" asp-controller="Account" asp-action="Logout">LOGOUT @User.Identity.Name.ToUpper()</a>
+                    }
+                    else
+                    { 
+                        <a class="nav-link" asp-controller="Account" asp-action="SignUp">SIGN UP</a>
                     }
                 </nav>
             </div>
