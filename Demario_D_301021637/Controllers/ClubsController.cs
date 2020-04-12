@@ -59,7 +59,7 @@ namespace Demario_D_301021637.Controllers
         public IActionResult UpdateClub(Clubs club)
         {
             if (ModelState.IsValid) {
-                if (IsValidUser(club.createdBy))
+                if (IsValidUser(GetClubs.createdBy))
                 {
                     ClubsRepository.SaveClubs(club);
                     return RedirectToAction("Clubs");

@@ -28,7 +28,8 @@ namespace Demario_D_301021637.Models
                     dbEntry.ClubName = club.ClubName;
                     dbEntry.ClubManager = club.ClubManager;
                     dbEntry.ClubDetails = club.ClubDetails;
-                
+                    dbEntry.createdBy = club.createdBy;
+
             }
             context.SaveChanges();
             return club;
