@@ -9,7 +9,7 @@ namespace Demario_D_301021637.Models
     {
         IQueryable<Clubs> IClubs { get; }
 
-        void SaveClubs(Clubs club);
+        Clubs SaveClubs(Clubs club);
         Clubs DeleteClub(int ClubId);
     }
 }

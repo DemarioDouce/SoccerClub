@@ -30,10 +30,10 @@ namespace Demario_D_301021637.Controllers
 
         [HttpPost]
         [Authorize]
-        public IActionResult AddClub(Clubs club)
+        public RedirectToActionResult AddClub(Clubs club)
         {
-            ClubsRepository.SaveClubs(club);
-                return RedirectToAction("Clubs");
+            Clubs saveClub = ClubsRepository.SaveClubs(club);
+                return RedirectToAction("Clubs", saveClub);
         }
         public ViewResult Clubs()
         {
@@ -75,18 +75,18 @@ namespace Demario_D_301021637.Controllers
 
         [HttpPost]
         [Authorize]
-        public IActionResult DeleteClub(int ClubId)
+        public RedirectToActionResult DeleteClub(int ClubId)
         {
             GetClubs = ClubsRepository.IClubs.FirstOrDefault(c => c.ClubID == ClubId);
             if (IsValidUser(GetClubs.createdBy))
             {
                 Clubs deletedClub = ClubsRepository.DeleteClub(ClubId);
-                return View ("Clubs");
+                return RedirectToAction("Clubs");
             }
             else
             {
                 ViewBag.ErrorMessage = "You don't have right to Delete "+ GetClubs.ClubName + " club";
-                return View("Clubs", ClubsRepository.IClubs);
+                return RedirectToAction("ClubDetails", ClubsRepository.IClubs);
             }
 
         }

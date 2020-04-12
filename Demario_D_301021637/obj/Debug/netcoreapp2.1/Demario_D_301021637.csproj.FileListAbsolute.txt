@@ -154,3 +154,4 @@ C:\Users\timho\Desktop\Winter 2020\COMP 229-002 - Web Application Development\As
 C:\Users\timho\Desktop\Winter 2020\COMP 229-002 - Web Application Development\Assignments\Group Assignment\SoccerClub\Demario_D_301021637\obj\Debug\netcoreapp2.1\Demario_D_301021637.pdb
 C:\Users\timho\Desktop\Winter 2020\COMP 229-002 - Web Application Development\Assignments\Group Assignment\SoccerClub\Demario_D_301021637\obj\Debug\netcoreapp2.1\Demario_D_301021637.genruntimeconfig.cache
 C:\Users\timho\Desktop\Winter 2020\COMP 229-002 - Web Application Development\Assignments\Group Assignment\SoccerClub\Demario_D_301021637\obj\Debug\netcoreapp2.1\Demario_D_301021637.csproj.CopyComplete
+C:\Users\timho\Desktop\Winter 2020\COMP 229-002 - Web Application Development\Assignments\Group Assignment\SoccerClub\Demario_D_301021637\obj\Debug\netcoreapp2.1\Razor\Views\Error\Error.cshtml.g.cs

@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace Demario_D_301021637.Models
 {
-    public static class SeedDataClubs
+    public class SeedDataClubs
     {
         public static void EnsurePopulated(IApplicationBuilder app)
         {
             ApplicationDbContext context = app.ApplicationServices
                 .GetRequiredService<ApplicationDbContext>();
-            context.Database.EnsureDeleted();
+            //context.Database.EnsureDeleted();
             context.Database.Migrate();
             if (!context.ClubsDb.Any())
             {
