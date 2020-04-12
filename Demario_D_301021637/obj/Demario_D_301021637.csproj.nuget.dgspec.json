@@ -1,21 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\timho\\Desktop\\Winter 2020\\COMP 229-002 - Web Application Development\\Assignments\\Group Assignment\\SoccerClub\\Demario_D_301021637\\Demario_D_301021637.csproj": {}
+    "C:\\Users\\demar\\Desktop\\New folder\\Demario_D_301021637\\Demario_D_301021637.csproj": {}
   },
   "projects": {
-    "C:\\Users\\timho\\Desktop\\Winter 2020\\COMP 229-002 - Web Application Development\\Assignments\\Group Assignment\\SoccerClub\\Demario_D_301021637\\Demario_D_301021637.csproj": {
+    "C:\\Users\\demar\\Desktop\\New folder\\Demario_D_301021637\\Demario_D_301021637.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\timho\\Desktop\\Winter 2020\\COMP 229-002 - Web Application Development\\Assignments\\Group Assignment\\SoccerClub\\Demario_D_301021637\\Demario_D_301021637.csproj",
+        "projectUniqueName": "C:\\Users\\demar\\Desktop\\New folder\\Demario_D_301021637\\Demario_D_301021637.csproj",
         "projectName": "Demario_D_301021637",
-        "projectPath": "C:\\Users\\timho\\Desktop\\Winter 2020\\COMP 229-002 - Web Application Development\\Assignments\\Group Assignment\\SoccerClub\\Demario_D_301021637\\Demario_D_301021637.csproj",
-        "packagesPath": "C:\\Users\\timho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\timho\\Desktop\\Winter 2020\\COMP 229-002 - Web Application Development\\Assignments\\Group Assignment\\SoccerClub\\Demario_D_301021637\\obj\\",
+        "projectPath": "C:\\Users\\demar\\Desktop\\New folder\\Demario_D_301021637\\Demario_D_301021637.csproj",
+        "packagesPath": "C:\\Users\\demar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\demar\\Desktop\\New folder\\Demario_D_301021637\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\timho\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\demar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"

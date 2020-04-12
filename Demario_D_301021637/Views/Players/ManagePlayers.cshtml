@@ -15,34 +15,41 @@
             <th scope="col">Player Name</th>
             <th scope="col">Player Club</th>
             <th scope="col">Player Position</th>
-            <th scope="col" colspan="2">Actions</th>
-        </tr>
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <th scope="col" colspan="2">Actions</th>
+            }
+            </tr>
     </thead>
     <tbody>
         @foreach (Players p in Model)
         {
-        <tr>
-            <td>@p.PlayerName</td>
-            <td>@p.PlayerClub</td>
-            <td>@p.PlayerPosition</td>
-            <td>
-                <form>
-                    <a asp-controller="Players" asp-action="ReassignPlayer" class="btn btn-sm btn-warning"
-                       asp-route-PlayerId="@p.PlayerID">
-                        REASSIGN
-                    </a>
-                    <input type="hidden" name="PlayerId" value="@p.PlayerID" />
-                </form>
-            </td>
-            <td>
-                <form asp-controller="Players" asp-action="DeletePlayer" method="post">
-                    <input type="hidden" name="PlayerId" value="@p.PlayerID" />
-                    <button type="submit" class="btn btn-danger btn-sm">
-                        DEREGISTER
-                    </button>
-                </form>
-            </td>
-        </tr>
+            <tr>
+                <td>@p.PlayerName</td>
+                <td>@p.PlayerClub</td>
+                <td>@p.PlayerPosition</td>
+
+                @if (SignInManager.IsSignedIn(User))
+                {
+                    <td>
+                        <form>
+                            <a asp-controller="Players" asp-action="ReassignPlayer" class="btn btn-sm btn-warning"
+                               asp-route-PlayerId="@p.PlayerID">
+                                REASSIGN
+                            </a>
+                            <input type="hidden" name="PlayerId" value="@p.PlayerID" />
+                        </form>
+                    </td>
+                    <td>
+                        <form asp-controller="Players" asp-action="DeletePlayer" method="post">
+                            <input type="hidden" name="PlayerId" value="@p.PlayerID" />
+                            <button type="submit" class="btn btn-danger btn-sm">
+                                DEREGISTER
+                            </button>
+                        </form>
+                    </td>
+                }
+            </tr>
         }
     </tbody>
 </table>
@@ -50,4 +57,3 @@
 
 
 <a class="btn btn-primary" asp-controller="Players" asp-action="AddPlayers">ADD</a>
-          

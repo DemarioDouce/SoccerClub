@@ -155,3 +155,44 @@ C:\Users\timho\Desktop\Winter 2020\COMP 229-002 - Web Application Development\As
 C:\Users\timho\Desktop\Winter 2020\COMP 229-002 - Web Application Development\Assignments\Group Assignment\SoccerClub\Demario_D_301021637\obj\Debug\netcoreapp2.1\Demario_D_301021637.genruntimeconfig.cache
 C:\Users\timho\Desktop\Winter 2020\COMP 229-002 - Web Application Development\Assignments\Group Assignment\SoccerClub\Demario_D_301021637\obj\Debug\netcoreapp2.1\Demario_D_301021637.csproj.CopyComplete
 C:\Users\timho\Desktop\Winter 2020\COMP 229-002 - Web Application Development\Assignments\Group Assignment\SoccerClub\Demario_D_301021637\obj\Debug\netcoreapp2.1\Razor\Views\Error\Error.cshtml.g.cs
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\bin\Debug\netcoreapp2.1\Bower.json
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\bin\Debug\netcoreapp2.1\Demario_D_301021637.deps.json
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\bin\Debug\netcoreapp2.1\Demario_D_301021637.runtimeconfig.json
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\bin\Debug\netcoreapp2.1\Demario_D_301021637.runtimeconfig.dev.json
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\bin\Debug\netcoreapp2.1\Demario_D_301021637.dll
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\bin\Debug\netcoreapp2.1\Demario_D_301021637.pdb
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\bin\Debug\netcoreapp2.1\Demario_D_301021637.Views.dll
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\bin\Debug\netcoreapp2.1\Demario_D_301021637.Views.pdb
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Demario_D_301021637.csprojAssemblyReference.cache
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Demario_D_301021637.csproj.CoreCompileInputs.cache
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Demario_D_301021637.RazorAssemblyInfo.cache
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Demario_D_301021637.RazorAssemblyInfo.cs
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Demario_D_301021637.AssemblyInfoInputs.cache
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Demario_D_301021637.AssemblyInfo.cs
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Demario_D_301021637.TagHelpers.input.cache
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Demario_D_301021637.TagHelpers.output.cache
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Demario_D_301021637.RazorCoreGenerate.cache
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Razor\Views\Account\SignUp.cshtml.g.cs
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Razor\Views\Clubs\AddClub.cshtml.g.cs
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Razor\Views\Clubs\ClubDetails.cshtml.g.cs
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Razor\Views\Clubs\Clubs.cshtml.g.cs
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Razor\Views\Clubs\UpdateClub.cshtml.g.cs
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Razor\Views\Error\Error.cshtml.g.cs
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Razor\Views\Home\Features.cshtml.g.cs
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Razor\Views\Players\AddPlayers.cshtml.g.cs
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Razor\Views\Players\ManagePlayers.cshtml.g.cs
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Razor\Views\Players\ReassignPlayer.cshtml.g.cs
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Razor\Views\Shared\FormBasedPartialView.cshtml.g.cs
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_DefaultLayout.cshtml.g.cs
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Demario_D_301021637.RazorTargetAssemblyInfo.cache
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Demario_D_301021637.RazorTargetAssemblyInfo.cs
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Demario_D_301021637.Views.pdb
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Demario_D_301021637.dll
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Demario_D_301021637.pdb
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Demario_D_301021637.genruntimeconfig.cache
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Demario_D_301021637.csproj.CopyComplete

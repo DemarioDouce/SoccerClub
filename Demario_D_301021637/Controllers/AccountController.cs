@@ -87,11 +87,11 @@ namespace Demario_D_301021637.Controllers
             }
         }
 
-
+            [AllowAnonymous]
             public ViewResult SignUp()
             {
                 return View();
             }
 
-        }
+    }
 }

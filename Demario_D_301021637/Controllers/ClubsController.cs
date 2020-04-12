@@ -81,7 +81,7 @@ namespace Demario_D_301021637.Controllers
             if (IsValidUser(GetClubs.createdBy))
             {
                 Clubs deletedClub = ClubsRepository.DeleteClub(ClubId);
-                return RedirectToAction("Clubs");
+                return RedirectToAction("Clubs", deletedClub);
             }
             else
             {
