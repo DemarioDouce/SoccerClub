@@ -17,32 +17,46 @@
             <th scope="col">Club Name</th>
             <th scope="col">Club Manager</th>
             <th scope="col">Club Details</th>
-            <th scope="col" colspan="2">Actions</th>
-        </tr>
+            @if (SignInManager.IsSignedIn(User))
+            {
+                @if (User.Identity.Name == "Admin")
+                {
+                    <th scope="col" colspan="2">Actions</th>
+                }
+            }
+                </tr>
     </thead>
     <tbody>
         <tr>
             <td>@Model.ClubName</td>
             <td>@Model.ClubManager</td>
             <td>@Model.ClubDetails</td>
-            <td>
-                <form>
-                    <a asp-controller="Clubs" asp-action="UpdateClub" class="btn btn-sm btn-warning"
-                       asp-route-ClubId="@Model.ClubID">
-                        UPDATE
-                    </a>
-                    <input type="hidden" name="ClubId" value="@Model.ClubID" />
-                </form>
-            </td>
-            <td>
-                <form asp-controller="Clubs" asp-action="DeleteClub" method="post">
-                    <input type="hidden" name="ClubId" value="@Model.ClubID" />
-                    <button type="submit" class="btn btn-danger btn-sm">
-                        DELETE
-                    </button>
-                </form>
-            </td>
-        </tr>
+
+            @if (SignInManager.IsSignedIn(User))
+            {
+                @if (User.Identity.Name == "Admin")
+                {
+
+                    <td>
+                        <form>
+                            <a asp-controller="Clubs" asp-action="UpdateClub" class="btn btn-sm btn-warning"
+                               asp-route-ClubId="@Model.ClubID">
+                                UPDATE
+                            </a>
+                            <input type="hidden" name="ClubId" value="@Model.ClubID" />
+                        </form>
+                    </td>
+                    <td>
+                        <form asp-controller="Clubs" asp-action="DeleteClub" method="post">
+                            <input type="hidden" name="ClubId" value="@Model.ClubID" />
+                            <button type="submit" class="btn btn-danger btn-sm">
+                                DELETE
+                            </button>
+                        </form>
+                    </td>
+                }
+            }
+                </tr>
     </tbody>
 </table>
 

@@ -195,3 +195,4 @@ C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\De
 C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Demario_D_301021637.pdb
 C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Demario_D_301021637.genruntimeconfig.cache
 C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Demario_D_301021637.csproj.CopyComplete
+C:\Users\demar\Desktop\New folder\Demario_D_301021637\obj\Debug\netcoreapp2.1\Demario_D_301021637.csprojAssemblyReference.cache
