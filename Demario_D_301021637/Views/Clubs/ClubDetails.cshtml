@@ -17,12 +17,16 @@
             <th scope="col">Club Name</th>
             <th scope="col">Club Manager</th>
             <th scope="col">Club Details</th>
+
             @if (SignInManager.IsSignedIn(User))
             {
+                @if (User.Identity.Name == Model.createdBy)
+                {
                     <th scope="col" colspan="2">Actions</th>
-            
+                }
             }
-                </tr>
+
+            </tr>
     </thead>
     <tbody>
         <tr>
@@ -32,6 +36,8 @@
 
             @if (SignInManager.IsSignedIn(User))
             {
+                @if (User.Identity.Name == Model.createdBy)
+                {
                     <td>
                         <form>
                             <a asp-controller="Clubs" asp-action="UpdateClub" class="btn btn-sm btn-warning"
@@ -49,8 +55,10 @@
                             </button>
                         </form>
                     </td>
+                }
             }
-                </tr>
+
+            </tr>
     </tbody>
 </table>
 

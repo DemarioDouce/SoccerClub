@@ -14,7 +14,6 @@ namespace Demario_D_301021637.Models
         {
             ApplicationDbContext context = app.ApplicationServices
                 .GetRequiredService<ApplicationDbContext>();
-            context.Database.EnsureDeleted();
             context.Database.Migrate();
             if (!context.PlayersDb.Any())
             {
