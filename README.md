@@ -38,3 +38,10 @@
 * Update the Club Details Page to include an update and delete button. Load an update page via the CRUD controller to handle updating, or deleting, the item in the database.
 * Update the Club Details page to show the list of players for the club and allow to add player to a club by navigating to the Manage players page.
 * On the Manage players page, add the functionality for users to add a player(s) to a club
+
+#### Part 4
+* Add identity support to your models and Entity Framework. Identity data must be contained in a separate database.
+  * Include seed data for admin user.
+* Add methods to support editing a club
+* Prevent anonymous users from doing anything other than browsing your collection and logging in.
+* Implement support for authenticated user to be able to perform all available CRUD operations
