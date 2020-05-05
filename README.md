@@ -28,3 +28,13 @@
 * When the user clicks the save button on the Insert Club Page, persist the form data to the repository collections.
 * Update the Club Page to display a list of items from the repository.
   * Clicking a club item should load the Club Details Page with all the details.
+  
+  #### Part 3
+* Create a class(s) to support Entity Framework and to implement your repository interface.
+* In the Models folder, create a SeedData class to populate your database with initial data.
+  * Add the code to run include this data if the database is empty.
+* Generate the migration files to implement your database via Entity Framework.
+* Implement a CRUD controller
+* Update the Club Details Page to include an update and delete button. Load an update page via the CRUD controller to handle updating, or deleting, the item in the database.
+* Update the Club Details page to show the list of players for the club and allow to add player to a club by navigating to the Manage players page.
+* On the Manage players page, add the functionality for users to add a player(s) to a club
