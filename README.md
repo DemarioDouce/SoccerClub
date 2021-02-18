@@ -1,5 +1,5 @@
 # Soccer Club Management
 ---
 ## Screenshot
-![Homepage mockup image.](/Mockups/MockupHomepage.png)
+![Mockup image.](/Mockups/MockupHomepage.png)
 ---
