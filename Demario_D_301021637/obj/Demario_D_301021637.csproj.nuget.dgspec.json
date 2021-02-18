@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\demar\\Desktop\\New folder\\Demario_D_301021637\\Demario_D_301021637.csproj": {}
+    "C:\\Users\\demar\\Downloads\\SoccerClubManagement-Website\\Demario_D_301021637\\Demario_D_301021637.csproj": {}
   },
   "projects": {
-    "C:\\Users\\demar\\Desktop\\New folder\\Demario_D_301021637\\Demario_D_301021637.csproj": {
+    "C:\\Users\\demar\\Downloads\\SoccerClubManagement-Website\\Demario_D_301021637\\Demario_D_301021637.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\demar\\Desktop\\New folder\\Demario_D_301021637\\Demario_D_301021637.csproj",
+        "projectUniqueName": "C:\\Users\\demar\\Downloads\\SoccerClubManagement-Website\\Demario_D_301021637\\Demario_D_301021637.csproj",
         "projectName": "Demario_D_301021637",
-        "projectPath": "C:\\Users\\demar\\Desktop\\New folder\\Demario_D_301021637\\Demario_D_301021637.csproj",
+        "projectPath": "C:\\Users\\demar\\Downloads\\SoccerClubManagement-Website\\Demario_D_301021637\\Demario_D_301021637.csproj",
         "packagesPath": "C:\\Users\\demar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\demar\\Desktop\\New folder\\Demario_D_301021637\\obj\\",
+        "outputPath": "C:\\Users\\demar\\Downloads\\SoccerClubManagement-Website\\Demario_D_301021637\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -31,6 +31,7 @@
         },
         "frameworks": {
           "netcoreapp2.1": {
+            "targetAlias": "netcoreapp2.1",
             "projectReferences": {}
           }
         },
@@ -42,6 +43,7 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
+          "targetAlias": "netcoreapp2.1",
           "dependencies": {
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
@@ -83,7 +85,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }
