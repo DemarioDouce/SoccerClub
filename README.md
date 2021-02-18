@@ -1,3 +1,3 @@
 # Soccer Club Management
 ---
-## Screenshots
+## Screenshot
