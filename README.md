@@ -1,7 +1,7 @@
 # Soccer Club Management
 ---
 ## Screenshot
-![Homepage mockup image.](/Demario_D_301021637/Mockups/MockupHomepage.png)
+![Homepage mockup image.](/Mockups/MockupHomepage.png)
 ---
 ## Details
 * The home page is the main web page. The club page is a dynamic page for a collection of clubs.
